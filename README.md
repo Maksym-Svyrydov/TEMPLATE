@@ -6,7 +6,7 @@ Actions => General => Workflow permissions: установить чек бокс
 установить чек бокс на Allow GitHub Actions to create and approve pull request
 4. Установить зависимости npm install 
 5. Инициализировать проект: внести любые минимальные изменения в файл App.js, после изменений не должно быть ошибок!
-6. В файле package.json изменить "homepage": "https://<your github name>.github.io/<your repo name>/"
+6. В файле package.json изменить "homepage":"https://<your-github-name>.github.io/<your-repo-name>/"
 7. Выполнить команды в терминале:
 git add .
 git commit -m"initilal project"
