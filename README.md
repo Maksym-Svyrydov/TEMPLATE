@@ -13,15 +13,19 @@ git commit -m"initilal project"
 git push
 8. В настройках репозитория на вкладке Pages в разделе Branch выбрать ветку gh-pages , /root => save
 9. Приследуючем пуше в ветку main, страница проекта задеплоится из ветки gh-pages.
+      
 10. Для настройки маршрутизации необходимо добавить в файл index.js:
 - import { BrowserRouter } from 'react-router-dom'
+      
 - Обернуть App:
 <BrowserRouter basename="/your repo neme">
       <App />
 </BrowserRouter>
+      
 - в файле App.js добавить импорты:
 import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
+      
 - с помощю ленивой загрузки импортировать страници и настроить маршрутизацию:
 const Home = lazy(() => import('./pages/Home'));
 const Tweets = lazy(() => import('./pages/Tweets'));
@@ -37,12 +41,5 @@ export const App = () => {
     </Routes>
   );
 };
-
-
-
-
-
-ошибка 404 после перезагрузки страници устранена :) 
-
-
-
+      
+ошибка 404 после перезагрузки страници устранена :)
