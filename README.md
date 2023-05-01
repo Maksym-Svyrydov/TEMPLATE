@@ -27,8 +27,10 @@ import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
       
 - с помощю ленивой загрузки импортировать страници и настроить маршрутизацию:
+
 const Home = lazy(() => import('./pages/Home'));
 const Tweets = lazy(() => import('./pages/Tweets'));
+
 export const App = () => {
   return (
     <Routes>
